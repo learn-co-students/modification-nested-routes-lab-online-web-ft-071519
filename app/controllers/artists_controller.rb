@@ -1,4 +1,6 @@
 class ArtistsController < ApplicationController
+  helper_method :params
+  
   def index
     @artists = Artist.all
   end
